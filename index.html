@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+     <title> </title>
+     <meta charset="uff-8"><!-- para español letras -->
+     <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- version compatible para internet casi ultima -->
+     <meta name="viewport" content="width=device-width,initial-scale=1"><!-- para poder abrir desde un celular sin dificultad -->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Reggae+One&display=swap" rel="stylesheet">    
+    <!-- el href lo saque de bostrap en css copy -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+     rel="stylesheet" 
+     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+     crossorigin="anonymous"
+     >
+     <link rel="stylesheet" href="style.css"><!-- enlazar a una pagina -->
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-dark"><!--  da color negro al encabezado-->
+               <a class="navbar-brand" href="#">LOGO</a>
+    
+                <ul class="nav">
+                    <li class="nav-item active">
+                      <a class="nav-link " href="index.html">Inicio</a><!--  el slash / para entrar atras-->
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#mapa">Ubicacion</a><!--  #mapa no reubica ahi xq su id es mapa-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stripe">Menu</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="acercade.html">Acerca de</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="cover d-flex justify-content-center align-items-center flex-column p-5" >
+                <h1>
+                    nombre de la tienda
+                </h1>
+                <p>
+                    La mejor tienda de la ciudad 
+                </p>
+                <button class="btn btn-primary">
+                   
+                    conoce mas
+                </button>
+            </div>
+        </header> 
+        <section><!--  aqui pondremos las tarjetas-->
+            <div class="container mt-5 mb-5"><!-- mt-5 da margen top- mb-5 margen hacia abajo-->
+                <div class="row justify-content-center" >
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2"><!--  aqui damos mas margen y se adpte al celular,tablet y pc-->
+                        <div class="card" >
+                            <div title="moto en circuito 1" class="cover cover-small" style="background-image:url(pista1.jpg) ;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Piezas de moto</h5>
+                              <p class="card-text">caracteristicas de la moto</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                        <div class="card" >
+                            <div title="moto en circuito 2" class="cover cover-small" style="background-image:url(pista2.jpg) ;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Piezas de moto</h5>
+                              <p class="card-text">caracteristicas de la motoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                        <div class="card" >
+                            <div title="moto en circuito 3" class="cover cover-small" style="background-image:url(pista3.jpg) ;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Piezas de moto</h5>
+                              <p class="card-text">caracteristicas de la moto</p>
+                            </div>
+                          </div>
+                    </div> 
+                </div>               
+            </div>            
+        </section>
+        <section>
+            <div class="container mt-5 mb-5"></div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-5">
+                        <img
+                        src="SelfieDoodle.svg"
+                        alt="una persona sacandose foto para una selfi"
+                        />
+                    </div>                   
+                    <div class="col-12 col-sm-6">
+                        <h3>
+                            !Inicia tu dia con una buena actitud!   
+                        </h3>
+                        <p>
+                            !ordena tus momentos mas divertidos!   
+                        </p>
+                        <a href="#mapa">Ir al mapa</a>
+                    </div>
+                </div>
+            <form action=""><!--poner donde enviar el contenido-->
+                <label for="email1">Correo electronico</label>
+                <div class="d-flex"><!--para agarra el centreo-->
+                    <div class="flex-fill mr-2" ><!--flex-fill llena el espacio posible que puedas ocupar-->
+                        
+                        <input type="email" id="email1" class="form-control"/>
+                    </div>
+                    <button type="submit" class="btn btn-primary"> <!--el submit asegura que envia el contenido-->
+                        enviar
+                    </button>
+                </div>
+            </form>
+        </section>
+        <section>
+            <!--tira de productos-->
+            <div class="container mt-5 mb-5" id="stripe">
+                <div class="product-stripe">
+                    <div class="stripe-container">
+                        <div class="card" >
+                            <div title="tipo de moto 1" class="cover cover-small" style="background-image:url(foto1.jpg) ;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Escena 1</h5>
+                              <span class="badge bg-info text-dark">$20USD</span>
+                            </div>
+                        </div>
+                        <div class="card" >
+                            <div title="moto en circuito 2" class="cover cover-small" style="background-image:url(foto2.jpg) ;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Escena 2</h5>
+                              <span class="badge bg-info text-dark">$50USD</span>
+                            </div>
+                        </div>
+                        <div class="card" >
+                            <div title="moto en circuito 2" class="cover cover-small" style="background-image:url(foto3.jpg) ;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Escena 3</h5>
+                              <span class="badge bg-info text-dark">$70USD</span>
+                            </div>
+                        </div>
+                        <div class="card" >
+                            <div title="moto en circuito 2" class="cover cover-small" style="background-image:url(foto4.jpg) ;">
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Escena 4</h5>
+                              <span class="badge bg-info text-dark">$120USD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container mt-5 mb-5 text-center" id="mapa">
+                <h4>
+                    Aqui nos vemos:
+                </h4>
+                <p>
+                    Victor Sanjinez, La Paz
+                </p>
+                <div class="responsive-iframe">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24821.38241615686!2d-68.11711566265237!3d-16.508004248572828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f20884a7c16d7%3A0x36c3a3ee4d4dc9d!2sPlaza%20Espa%C3%B1a!5e0!3m2!1ses-419!2sbo!4v1613748418926!5m2!1ses-419!2sbo" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </section>      
+    </body>
+</html>
